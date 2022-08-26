@@ -16,21 +16,29 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="JVM学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://chenshilin40.github.io/2022/08/22/hello-world/index.html">
+<meta property="og:title" content="JVM学习笔记">
+<meta property="og:url" content="http://chenshilin40.github.io/2022/08/26/JVM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="JVM学习">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-08-22T13:30:15.630Z">
-<meta property="article:modified_time" content="2022-08-22T13:30:15.630Z">
+<meta property="og:image" content="https://c-40.oss-cn-hangzhou.aliyuncs.com/img/image-20220822194803909.png">
+<meta property="og:image" content="https://c-40.oss-cn-hangzhou.aliyuncs.com/img/image-20220822194928828.png">
+<meta property="og:image" content="https://c-40.oss-cn-hangzhou.aliyuncs.com/img/image-20220823151156508.png">
+<meta property="og:image" content="https://c-40.oss-cn-hangzhou.aliyuncs.com/img/image-20220823151423236.png">
+<meta property="og:image" content="https://c-40.oss-cn-hangzhou.aliyuncs.com/img/image-20220823152656363.png">
+<meta property="og:image" content="https://c-40.oss-cn-hangzhou.aliyuncs.com/img/image-20220823154712534.png">
+<meta property="article:published_time" content="2022-08-25T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-08-25T16:00:00.000Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="JVM">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://c-40.oss-cn-hangzhou.aliyuncs.com/img/image-20220822194803909.png">
   
   
   
-  <title>Hello World - Hexo</title>
+  <title>JVM学习笔记 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -195,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="JVM学习笔记"></span>
           
         </div>
 
@@ -206,8 +214,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-08-22 21:30" pubdate>
-          2022年8月22日 晚上
+        <time datetime="2022-08-26 00:00" pubdate>
+          2022年8月26日 凌晨
         </time>
       </span>
     
@@ -218,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          367 字
+          636 字
         
       </span>
     
@@ -229,7 +237,7 @@
         
         
         
-          4 分钟
+          6 分钟
         
       </span>
     
@@ -267,24 +275,63 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">JVM学习笔记</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <h1 id="JVM学习笔记"><a href="#JVM学习笔记" class="headerlink" title="JVM学习笔记"></a>JVM学习笔记</h1><h1 id="1-什么是jvm"><a href="#1-什么是jvm" class="headerlink" title="1.什么是jvm"></a>1.什么是jvm</h1><p>jvm全称java vistrual machine java虚拟机</p>
+<h1 id="2-内存结构"><a href="#2-内存结构" class="headerlink" title="2.内存结构"></a>2.内存结构</h1><h2 id="2-1程序计数器"><a href="#2-1程序计数器" class="headerlink" title="2.1程序计数器"></a>2.1程序计数器</h2><p><img src="https://c-40.oss-cn-hangzhou.aliyuncs.com/img/image-20220822194803909.png" srcset="/img/loading.gif" lazyload alt="image-20220822194803909"></p>
+<p>Program Counter Register 程序计数器（寄存器）</p>
+<h3 id="2-1-1-作用"><a href="#2-1-1-作用" class="headerlink" title="2.1.1 作用"></a>2.1.1 作用</h3><p><img src="https://c-40.oss-cn-hangzhou.aliyuncs.com/img/image-20220822194928828.png" srcset="/img/loading.gif" lazyload alt="image-20220822194928828"></p>
+<p>在程序的执行过程中，记住下一条jvm指令的执行地址</p>
+<h3 id="2-2-2-特点"><a href="#2-2-2-特点" class="headerlink" title="2.2.2 特点"></a>2.2.2 特点</h3><ul>
+<li>线程私有</li>
+<li>不会存在内存溢出</li>
+</ul>
+<h2 id="2-2-虚拟机栈"><a href="#2-2-虚拟机栈" class="headerlink" title="2.2 虚拟机栈"></a>2.2 虚拟机栈</h2><p>线程运行时需要的内存空间</p>
+<ul>
+<li>每个线程运行时所需要的内存，被成为虚拟机栈</li>
+<li>每个栈由多个战阵组成，对应着每次方法调用时锁占用的内存</li>
+<li>每个线程只能有一个活动栈帧，对应着当前正在执行那个方法</li>
+</ul>
+<h3 id="2-2-1-问题解析"><a href="#2-2-1-问题解析" class="headerlink" title="2.2.1 问题解析"></a>2.2.1 问题解析</h3><p>1.垃圾回收是否涉及栈内存</p>
+<p>不涉及，栈内存在方法执行完毕后就会自动回收。</p>
+<p>2.栈内存分配越大越好吗？</p>
+<p>栈内存越大，线程数就会变小，</p>
+<p>3.方法内的局部变量是否线程安全？</p>
+<p>​	如果方法内局部变量没有逃离方法的作用范围，他就是线程安全的</p>
+<p>​    如果局部变量引用了对象，并逃离方法的作用范围，需要考虑线程安全问题。</p>
+<h3 id="2-2-3-栈内存溢出"><a href="#2-2-3-栈内存溢出" class="headerlink" title="2.2.3 栈内存溢出"></a>2.2.3 栈内存溢出</h3><ul>
+<li><p>栈帧过多导致栈内存溢出</p>
+</li>
+<li><p>栈帧过大导致栈内存溢出</p>
+</li>
+</ul>
+<h3 id="2-2-4-线程运行诊断"><a href="#2-2-4-线程运行诊断" class="headerlink" title="2.2.4 线程运行诊断"></a>2.2.4 线程运行诊断</h3><p>cpu占用过多</p>
+<p>程序运行很长时间没有结果</p>
+<h2 id="2-3-本地方法栈"><a href="#2-3-本地方法栈" class="headerlink" title="2.3 本地方法栈"></a>2.3 本地方法栈</h2><p><img src="https://c-40.oss-cn-hangzhou.aliyuncs.com/img/image-20220823151156508.png" srcset="/img/loading.gif" lazyload alt="image-20220823151156508"></p>
+<h2 id="2-4-堆"><a href="#2-4-堆" class="headerlink" title="2.4 堆"></a>2.4 堆</h2><p>-Xmx8m 设置堆空间 默认4g</p>
+<p><img src="https://c-40.oss-cn-hangzhou.aliyuncs.com/img/image-20220823151423236.png" srcset="/img/loading.gif" lazyload alt="image-20220823151423236"></p>
+<p>通过new关键字，创建对象都会使用堆内存</p>
+<p>特点：</p>
+<ul>
+<li>它是线程共享的，堆中对象都需要考虑线程安全的问题</li>
+<li>有垃圾回收机制</li>
+</ul>
+<h3 id="2-4-1堆内存诊断"><a href="#2-4-1堆内存诊断" class="headerlink" title="2.4.1堆内存诊断"></a>2.4.1堆内存诊断</h3><ol>
+<li><p>jps 工具</p>
+<p>查看当前系统中有哪些 java 进程</p>
+</li>
+<li><p>jmap 工具</p>
+<p>查看堆内存占用情况 jmap - heap 进程id</p>
+</li>
+<li><p>jconsole 工具</p>
+<p>图形界面的，多功能的监测工具，可以连续监测</p>
+</li>
+</ol>
+<h2 id="2-5方法区"><a href="#2-5方法区" class="headerlink" title="2.5方法区"></a>2.5方法区</h2><p><img src="https://c-40.oss-cn-hangzhou.aliyuncs.com/img/image-20220823152656363.png" srcset="/img/loading.gif" lazyload alt="image-20220823152656363"></p>
+<h3 id="2-5-1-组成"><a href="#2-5-1-组成" class="headerlink" title="2.5.1 组成"></a>2.5.1 组成</h3><p><img src="https://c-40.oss-cn-hangzhou.aliyuncs.com/img/image-20220823154712534.png" srcset="/img/loading.gif" lazyload alt="image-20220823154712534"></p>
 
                 
               </div>
@@ -293,6 +340,41 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/JVM/" class="category-chain-item">JVM</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/JVM/java%E9%AB%98%E7%BA%A7/" class="category-chain-item">java高级</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/JVM/">#JVM</a>
+      
+    </div>
   
 </div>
 
@@ -302,8 +384,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>http://chenshilin40.github.io/2022/08/22/hello-world/</div>
+      <div>JVM学习笔记</div>
+      <div>http://chenshilin40.github.io/2022/08/26/JVM学习笔记/</div>
     </div>
     <div class="license-meta">
       
@@ -315,7 +397,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年8月22日</div>
+          <div>2022年8月26日</div>
         </div>
       
       
@@ -345,15 +427,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/08/26/JVM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="JVM学习笔记">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">JVM学习笔记</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2022/08/22/hello-world/" title="Hello World">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
